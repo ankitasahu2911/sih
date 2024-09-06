@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} 
+
+body {
+  height: 100vh;
+  background-color: #161513;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero, .about, .footer {
+  padding: 20px;
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    font-size: 90%;
+  }
+
+  .app {
+    padding: 10px;
+  }
+
+  .hero, .about, .footer {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 80%;
+  }
+
+  .app {
+    padding: 5px;
+  }
+
+  .hero, .about, .footer {
+    padding: 10px;
+  }
+}
