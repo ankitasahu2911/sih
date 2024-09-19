@@ -8,9 +8,7 @@ const About = () => {
       <header className="about-header">
         <h1>About Our Project</h1>
         <p>
-          Learn more about the SVAMITVA Scheme and our AI model for feature extraction.
-          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident iusto doloribus asperiores amet reprehenderit vero ab nostrum ducimus culpa, enim at quibusdam debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla maxime modi impedit non ab id harum consequuntur nesciunt est magni, vel totam tempore velit.
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, dolorem laudantium! Laboriosam, amet. Ex nulla nemo excepturi! Vitae optio saepe, deleniti eligendi unde obcaecati.</span>
+        Our project is centered around utilizing drone technology, AI, and GIS under the SVAMITVA Scheme to revolutionize rural land mapping in India. By generating accurate, high-resolution maps of property holdings, we empower rural communities with vital 'Record of Rights' documentation. This helps reduce property disputes, enables access to bank loans, and supports comprehensive village-level planning. Our solution also facilitates sustainable development by offering data for solar panel installation, groundwater management, and infrastructure planning. Through this innovative approach, we aim to contribute to the economic progress of rural India, ensuring long-term growth and improved livelihoods for rural households.
         </p>
       </header>
       

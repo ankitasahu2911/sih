@@ -6,8 +6,8 @@ const Hero = () => {
     <div className='hero'>
       <h1>Welcome to Our Website</h1>
       <p>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus maiores deserunt, animi ullam corrupti eius iste mollitia ducimus magnam ut harum voluptate ipsum dolorum.
+        
+        Explore how advanced drone technology and AI-driven solutions are revolutionizing rural land mapping and enabling economic growth for communities across India.
       </p>
       <div className="hero-action">
         <button className="hero-connect">

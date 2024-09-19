@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
-import { Link as RouterLink } from 'react-router-dom'; 
-import { Link } from 'react-scroll'; 
+import { Link as RouterLink, useLocation } from 'react-router-dom'; 
+import { Link as ScrollLink } from 'react-scroll'; 
 import logo_1 from '../../assets/logo_1.png';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const isHomePage = location.pathname === '/';
 
   return (
     <nav className='navbar'>
@@ -21,56 +24,79 @@ const Navbar = () => {
       </div>
       <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
         <li>
-          <Link 
-            to="hero" 
-            smooth={true} 
-            duration={500} 
-            className='nav-link' 
-            onClick={toggleMenu}
-          >
-            Home
-          </Link>
+          {isHomePage ? (
+            <ScrollLink 
+              to="hero" 
+              smooth={true} 
+              duration={500} 
+              className='nav-link' 
+              onClick={toggleMenu}
+            >
+              Home
+            </ScrollLink>
+          ) : (
+            <RouterLink to="/" className='nav-link' onClick={toggleMenu}>
+              Home
+            </RouterLink>
+          )}
         </li>
         <li>
-          <Link 
-            to="pages" 
-            smooth={true} 
-            duration={500} 
-            className='nav-link' 
-            onClick={toggleMenu}
-          >
-            Services
-          </Link>
+          {isHomePage ? (
+            <ScrollLink 
+              to="pages" 
+              smooth={true} 
+              duration={500} 
+              className='nav-link' 
+              onClick={toggleMenu}
+            >
+              Services
+            </ScrollLink>
+          ) : (
+            <RouterLink to="/services" className='nav-link' onClick={toggleMenu}>
+              Services
+            </RouterLink>
+          )}
         </li>
         <li>
-          <Link 
-            to="about" 
-            smooth={true} 
-            duration={500} 
-            className='nav-link' 
-            onClick={toggleMenu}
-          >
-            About Us
-          </Link>
+          {isHomePage ? (
+            <ScrollLink 
+              to="about" 
+              smooth={true} 
+              duration={500} 
+              className='nav-link' 
+              onClick={toggleMenu}
+            >
+              About Us
+            </ScrollLink>
+          ) : (
+            <RouterLink to="/about" className='nav-link' onClick={toggleMenu}>
+              About Us
+            </RouterLink>
+          )}
         </li>
-        
         <li>
-          <Link 
-            to="contact" 
-            smooth={true} 
-            duration={500} 
-            className='nav-link' 
-            onClick={toggleMenu}
-          >
-            Contact Us
-          </Link>
+          {isHomePage ? (
+            <ScrollLink 
+              to="contact" 
+              smooth={true} 
+              duration={500} 
+              className='nav-link' 
+              onClick={toggleMenu}
+            >
+              Contact Us
+            </ScrollLink>
+          ) : (
+            <RouterLink to="/contact" className='nav-link' onClick={toggleMenu}>
+              Contact Us
+            </RouterLink>
+          )}
         </li>
       </ul>
       <RouterLink to="/login" >
-  <button className="nav-connect">
-    Login
-  </button>
-</RouterLink>
+        <button className="nav-connect">
+          Login
+        </button>
+      </RouterLink>
     </nav>
   );
 }

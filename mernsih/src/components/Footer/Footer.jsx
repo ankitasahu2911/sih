@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Importing Link
 import './Footer.css';
 
 const Footer = () => {
@@ -7,26 +8,26 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h3>About Us</h3>
-          <p>We are dedicated to providing the best services and solutions to our customers. Our team is committed to excellence and innovation.</p>
+          <p>We are dedicated to ensuring transparency, accountability, and service excellence across all public platforms. Our mission is to promote efficient governance and contribute to the nation's growth.</p>
         </div>
         <div className="footer-section">
-          <h3>Quick Links</h3>
+          <h3>Important Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/ministry">Ministry of Panchayati Raj</Link></li>
+            <li><Link to="/services">Government Services</Link></li>
+            <li><Link to="/grievances">Public Grievances</Link></li>
+            <li><Link to="/rti">RTI Information</Link></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Contact Us</h3>
-          <p>123 Street, City, Country</p>
-          <p>Email: info@example.com</p>
-          <p>Phone: +123 456 7890</p>
+          <h3>Contact Information</h3>
+          <p>Govt. Office Address, City, Country</p>
+          <p>Email: contact@gov.in</p>
+          <p>Phone: +91 123 456 7890</p>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+        <p>&copy; 2024 Government of India. All Rights Reserved.</p>
       </div>
     </footer>
   );
