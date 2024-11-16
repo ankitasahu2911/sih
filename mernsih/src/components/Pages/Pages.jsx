@@ -13,7 +13,7 @@ const Pages = () => {
       <div className="card" style={{ backgroundImage: `url(${drone})` }}>
         <div className="card-body">
         
-          <a href="#" className="card-button"><h3>Rural Developement</h3></a>
+          <a href="#" className="card-button"><h3>Rural Development</h3></a>
         </div>
       </div>
       <div className="card" style={{ backgroundImage: `url(${service})` }}>

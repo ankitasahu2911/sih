@@ -21,9 +21,9 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h3>Contact Information</h3>
-          <p>Govt. Office Address, City, Country</p>
-          <p>Email: contact@gov.in</p>
-          <p>Phone: +91 123 456 7890</p>
+         
+          <p>Email: sujalnath@gmail.com</p>
+          <p>Phone: +91 9223456789</p>
         </div>
       </div>
       <div className="footer-bottom">

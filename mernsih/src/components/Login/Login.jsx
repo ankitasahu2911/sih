@@ -114,10 +114,17 @@ const Login = () => {
         </form>
       ) : (
         <div className="upload-container">
-          <h2>Upload Image</h2>
-          <input type="file" onChange={handleFileChange} />
-          <button onClick={handleFileUpload}>Upload</button>
-          {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+         <h2>Upload Image</h2>
+         <form className="upload-form">
+         <input 
+    type="file" 
+    id="fileInput" 
+    onChange={handleFileChange} 
+  />
+  <label htmlFor="fileInput">Select File</label>
+  <button type="button" onClick={handleFileUpload}>Upload</button>
+  {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+</form>
         </div>
       )}
     </div>
